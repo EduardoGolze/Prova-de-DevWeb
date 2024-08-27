@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #F0E68C, #D8C1A6); /* Degradê suave */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #FFFFFF; /* Branco puro para contraste */
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333333; /* Cinza escuro para melhor leitura */
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento consistente entre os elementos */
+}
+
+label {
+    margin: 0;
+    color: #555555; /* Cinza médio para contraste suave */
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #4A9021; /* Verde escuro para destaque */
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+    transition: border-color 0.3s ease; /* Transição suave na borda */
+}
+
+input:focus {
+    border-color: #2E6D1F; /* Verde ainda mais escuro no foco */
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #4A9021, #2E6D1F); /* Degradê verde para o botão */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2E6D1F, #4A9021); /* Inverte o gradiente no hover */
+    transform: scale(1.05); /* Efeito de ampliação no hover */
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4A9021; /* Verde escuro para o link */
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2E6D1F; /* Verde ainda mais escuro no hover */
+    text-decoration: underline;
+}
+
+#result {
+    background: linear-gradient(135deg, #E0F7FA, #B2EBF2); /* Degradê suave entre duas tonalidades de azul claro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333333; /* Cinza escuro para texto principal */
+}
+
+#result #resultado-real {
+    font-weight: bold;
+    color: #4A9021; /* Verde escuro para valor real */
+}
+
+#result #resultado-parcela {
+    color: #5D5A4D; /* Tom de cinza mais suave para valor parcelado */
+}
